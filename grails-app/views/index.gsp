@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+%{--    <title>Welcome to Grails</title>--}%
 </head>
 <body>
-<content tag="nav">
+%{--<content tag="nav">
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -71,7 +71,7 @@
             </ul>
         </div>
     </section>
-</div>
+</div>--}%
 
 </body>
 </html>

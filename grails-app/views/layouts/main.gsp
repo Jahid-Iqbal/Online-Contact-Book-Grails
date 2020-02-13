@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>
-        <g:layoutTitle default="Grails"/>
+        <g:layoutTitle default="Grails Online Contact Book"/>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
@@ -16,7 +16,39 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark rounded">
+        <a class="navbar-brand" href="#">Grails Online Contacts Book</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        %{--Member Action Menu--}%
+     %{--   <ul class="navbar-nav ml-auto">
+            <UIHelper:memberActionMenu/>
+        </ul>--}%
+    </nav>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">Dashboard</a></li>
+                <li class="list-group-item"><a href="#">Contact</a></li>
+                <li class="list-group-item"><a href="#">Contact Group</a></li>
+
+            </ul>
+        </nav>
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+            <g:layoutBody/>
+        </main>
+    </div>
+</div>
+
+%{--<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
     <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,10 +60,11 @@
         </ul>
     </div>
 
-</nav>
+</nav>--}%
 
-<g:layoutBody/>
+%{--<g:layoutBody/>--}%
 
+%{--
 <div class="footer row" role="contentinfo">
     <div class="col">
         <a href="http://guides.grails.org" target="_blank">
@@ -62,7 +95,7 @@
 
 <div id="spinner" class="spinner" style="display:none;">
     <g:message code="spinner.alt" default="Loading&hellip;"/>
-</div>
+</div>--}%
 
 <asset:javascript src="application.js"/>
 
