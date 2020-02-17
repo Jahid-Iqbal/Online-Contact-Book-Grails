@@ -6,7 +6,7 @@ class GlobalConfig {
             REGULAR_MEMBER: "REGULAR_MEMBER",
     ]
 
-    public static Integer itempPerPage(){
+    public static Integer itemsPerPage(){
 
         return 5
     }
