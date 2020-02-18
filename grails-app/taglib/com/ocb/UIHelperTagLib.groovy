@@ -14,7 +14,6 @@ class UIHelperTagLib {
             out << "<small class='form-text text-danger''><strong>${errorMessage}</strong></small>"
         }
     }
-
    /* def memberActionMenu = { attrs, body ->
         out << '<li class="nav-item dropdown show">'
         out << g.link(class:"nav-link dropdown-toggle", "data-toggle":"dropdown"){authenticationService.getMemberName()}

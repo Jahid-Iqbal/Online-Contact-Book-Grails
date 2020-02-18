@@ -90,10 +90,9 @@ h1 {
 }
 
 
-/*
 .alert{
     min-height:50px;
-    width: 300px; !** Use 100% to fill the width of the page **!
+    width: 300px; /** Use 100% to fill the width of the page **/
     position: fixed;
     top: 0;
     left: 0;
@@ -105,4 +104,4 @@ h1 {
 
 .alert .message{
     font-weight: bold;
-}*/
+}

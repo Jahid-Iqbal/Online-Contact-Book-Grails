@@ -10,6 +10,16 @@
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
 
     <asset:stylesheet src="application.css"/>
+    <asset:javascript src="application.js"/>
+
+    <script type="text/javascript">
+        %{--OCB.baseURL = "${UIHelper.appBaseURL()}";--}%
+        <g:if test="${flash?.message && flash?.message?.info}">
+        jQuery(document).ready(function () {
+            OCB.messageBox.showMessage(Boolean(${flash.message?.success}), "${flash.message?.info}");
+        });
+        </g:if>
+    </script>
 
     <g:layoutHead/>
 </head>
@@ -97,7 +107,7 @@
     <g:message code="spinner.alt" default="Loading&hellip;"/>
 </div>--}%
 
-<asset:javascript src="application.js"/>
+
 
 </body>
 </html>
