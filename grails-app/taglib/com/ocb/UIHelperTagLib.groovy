@@ -26,8 +26,8 @@ class UIHelperTagLib {
      def leftNavigation = { attrs, body ->
          List navigations = [
                  [controller: "dashboard", action: "index", name: "dashboard"],                     /*If the user not a administratot*/
-                /* [controller: "contactGroup", action: "index", name: "contact.group"],
-                 [controller: "contact", action: "index", name: "contact"],*/
+                 [controller: "contactGroup", action: "index", name: "contact.group"],
+//                 [controller: "contact", action: "index", name: "contact"],
          ]
 
          if(authenticationService.isAdministratorMember()){
