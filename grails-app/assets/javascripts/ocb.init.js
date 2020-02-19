@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
         content: 'Are you sure want to delete?'
     });
 
-   /* jQuery('.card-body').on('click', '.add-new-number ', function () {
+    jQuery('.card-body').on('click', '.add-new-number ', function () {
         var _this = jQuery(this);
         OCB.ajax.call({
             url: OCB.baseURL + "contactDetails/create",
@@ -57,6 +57,6 @@ jQuery(document).ready(function () {
             }
         });
 
-    });*/
+    });
 
 });

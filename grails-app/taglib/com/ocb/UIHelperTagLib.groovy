@@ -46,7 +46,7 @@ class UIHelperTagLib {
          out << g.select(class:"form-control", multiple: "multiple", optionValue: "name", optionKey: "id", value: attrs.value, name: name, from: contactGroupService.getGroupList())
      }
 
-    /* def contactType = { attrs, body ->
+     def contactType = { attrs, body ->
          String name = attrs.name ?: "type"
          String value = attrs.value ?: ""
          def select = [:]
@@ -59,5 +59,5 @@ class UIHelperTagLib {
 
      def appBaseURL = { attrs, body ->
          out << AppUtil.baseURL();
-     }*/
+     }
 }
