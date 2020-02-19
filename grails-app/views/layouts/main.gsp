@@ -35,9 +35,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         %{--Member Action Menu--}%
-     %{--   <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto">
             <UIHelper:memberActionMenu/>
-        </ul>--}%
+        </ul>
     </nav>
 </header>
 
@@ -46,10 +46,12 @@
     <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
             <ul class="list-group">
-                <li class="list-group-item"><a href="#">Dashboard</a></li>
+                %{--<li class="list-group-item"><a href="#">Dashboard</a></li>      --}%%{--Dummy Navigation--}%%{--
                 <li class="list-group-item"><a href="#">Contact</a></li>
                 <li class="list-group-item"><a href="#">Contact Group</a></li>
 
+--}%
+                <UIHelper:leftNavigation/>
             </ul>
         </nav>
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">

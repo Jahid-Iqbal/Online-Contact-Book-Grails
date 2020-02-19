@@ -3,7 +3,7 @@ package com.ocb
 class AuthenticationController {
 
     AuthenticationService authenticationService
-   // MemberService memberService
+    MemberService memberService
 
     def login() {
         if (authenticationService.isAuthenticated()) {
@@ -27,7 +27,7 @@ class AuthenticationController {
         redirect(controller: "authentication", action: "login")
     }
 
-    /*def registration() {
+    def registration() {
         [member: flash.redirectParams]
     }
 
@@ -41,5 +41,5 @@ class AuthenticationController {
             flash.redirectParams = response.model
             redirect(controller: "authentication", action: "registration")
         }
-    }*/
+    }
 }
