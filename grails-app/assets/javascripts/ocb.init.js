@@ -22,6 +22,8 @@ jQuery(document).ready(function () {
         });
     });
 
+    // Delete Confirmation
+
     jQuery('.card-body').on('click', '.remove-number', function () {
         var _this = jQuery(this),
             contactId = _this.attr("data-id");

@@ -15,10 +15,10 @@
     <UIHelper:renderErrorMessage fieldName="email" model="${member}" errorMessage="Your Email Address is not Valid / Already Exist in System"/>
 </div>
 
-<g:if test="${!edit}">
+%{--<g:if test="${!edit}">--}%
     <div class="form-group">
         <label><g:message code="password"/> *</label>
         <g:passwordField name="password" class="form-control" value="${member?.password}" placeholder="Please Enter Password"/>
         <UIHelper:renderErrorMessage fieldName="password" model="${member}" errorMessage="Please Enter a Password."/>
     </div>
-</g:if>
+%{--</g:if>--}%
